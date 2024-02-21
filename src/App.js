@@ -1,11 +1,19 @@
 import { Button } from '@nextui-org/react';
 
 function App() {
+    const count = 5;
+
     return (
         <div className="App">
-            <Button variant={'shadow'} color={'secondary'}>
-                Test
-            </Button>
+            <div className="h-dvh bg-gray-100 flex items-center flex-col justify-center">
+                <div className="count text-9xl">{count}</div>
+                <div className="mt-2 actions flex gap-1">
+                    <Button color={'secondary'}>+5</Button>
+                    <Button color={'primary'}>+</Button>
+                    <Button color={'primary'}>-</Button>
+                    <Button color={'secondary'}>-5</Button>
+                </div>
+            </div>
         </div>
     );
 }
